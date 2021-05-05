@@ -1,0 +1,30 @@
+12/07/18-13:54   :Level is (%) :  100.00
+12/07/18-13:55   :Level is (%) :  100.00
+12/07/18-13:55   :Level is (%) :  34.00
+12/07/18-13:56   :Erreur Coupure de ligne
+12/07/18-13:57   :Erreur Coupure de ligne
+12/07/18-13:57   :Erreur Coupure de ligne
+12/07/18-13:58   :Erreur Coupure de ligne
+12/07/18-13:58   :Erreur Coupure de ligne
+12/07/18-13:59   :Erreur Coupure de ligne
+12/07/18-14:00   :Erreur Coupure de ligne
+12/07/18-14:00   :Erreur Coupure de ligne
+16/08/18-14:00   :Level is (%) :  100.00
+16/08/18-14:01   :Level is (%) :  100.00
+16/08/18-14:02   :Level is (%) :  100.00
+16/08/18-14:04   :Level is (%) :  100.00
+16/08/18-14:09   :Level is (%) :  100.00
+16/08/18-14:10   :Level is (%) :  100.00
+28/08/18-12:04   :Level is (%) :  45.00
+28/08/18-12:12   :Level is (%) :  64.00
+28/08/18-12:13   :Level is (%) :  64.00
+28/08/18-12:14   :Level is (%) :  64.00
+28/08/18-12:16   :Level is (%) :  64.00
+28/08/18-12:17   :Level is (%) :  64.00
+31/08/18-21:30   :Level is (%) :  79.00
+31/08/18-21:31   :Level is (%) :  32.00
+31/08/18-21:32   :Level is (%) :  32.00
+31/08/18-21:33   :Level is (%) :  32.00
+31/08/18-21:35   :Level is (%) :  48.00
+31/08/18-21:37   :Level is (%) :  48.00
+31/08/18-21:38   :Level is (%) :  48.00

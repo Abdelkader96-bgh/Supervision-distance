@@ -1,0 +1,4 @@
+sudo nano /etc/profile
+sudo python /home/pi/Desktop/Server.py
+sudo python /home/pi/Desktop/Mail.py
+sudo python /home/pi/Desktop/Transf.py

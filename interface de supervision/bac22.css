@@ -1,0 +1,38 @@
+.sup{clear:both;}
+mypic
+{border:1px #333 solid ; float left ;}
+
+	
+/* div */
+div{
+	background-color :white;
+	width:500px;
+	height :335px;
+	border:10px solid #000000;
+	float:left;
+	margin: 70px 
+	;
+}
+	 aside div {
+	background-color :white;
+	width:250px;
+	height :100%;
+	border:10px solid #000000;
+	float:right;
+	margin: 70px 
+	;
+	 }
+	 
+	 label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+.note {
+    font-size: .8em;
+}

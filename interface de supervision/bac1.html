@@ -1,0 +1,170 @@
+<?Php
+&dbhost ='localhost';
+&dbname ='mydb';
+&dbuser ='pi';
+&dbpass='123';
+
+
+try {
+&dbcon = new PDD("mysql:host={&dbhost};dbname={&dbnaame}",&dbuser,&dbpass);
+&dbcon-> setAttribute(PDO::ATTR_ERRMDDE,PDO::ERRMODE_EXEPTION);
+
+}catch(PDOException &ex){
+
+die(&ex->getMessage());
+}
+&stmt=&dbcon->prepare("SELECT * FROM TESTDB");
+&stmt->execute();
+&json=[];
+&json2=[];
+while(&row=&stmt->fetch(PDO::FETCH_ASSOC)){
+
+extract(&row);
+&json[] =&date;
+&json2[] = (int)&niveau;
+}
+echo json_encode(&json);
+echo json_encode(&json2);
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+	<head>
+		<link rel="icon" type="image/x-icon" href="ocp.jpg">
+	    <title>BAC 1</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+		<meta charset="UTF-8">
+		<link href="bac11.css" rel="stylesheet" type="text/css" media="all" />
+
+
+</head>
+<body background ="niveau.jpg" style : width= 100% >
+
+<div class="mypic" style="width:50%">
+ 
+<canvas id="myChart"></canvas>
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: <?php echo json_encode(&json); ?>,
+        datasets: [{
+            label: "Variation de Niveau D'acide",
+            backgroundColor: 'rgba(255, 99, 132,0.25)',
+            borderColor: 'rgb(255, 99, 132)',
+            data:<?php echo json_encode(&json2); ?>,
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+
+
+</script>
+</div>
+
+
+<aside>
+<div class="mypic" style="width:25%">
+
+<table bordercolorlight="black" border cellpadding="10" height="100%">
+<tr>
+<td colspan="5" align="center"> Tableau de supervision du niveau d'acide</td>
+</tr>
+<tr>
+<td align="center" width="10%" height="..."> Jour </td>
+<td align="center" width="20%" height="..."> Date </td>
+<td align="center" width="20%" height="..."> Niveau</td>
+
+</tr>
+<tr>
+<td> Lundi</td>
+<td> 
+<label for="start"></label>
+
+<input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="2018-01-01" max="2018-12-31">             </td>
+<td>              </td>
+</tr>
+<tr>
+<td> Mardi</td>
+<td><label for="start"></label>
+
+<input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="2018-01-01" max="2018-12-31">               </td>
+<td>              </td>
+</tr>
+<tr>
+<td> Mercredi</td>
+<td><label for="start"></label>
+
+<input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="2018-01-01" max="2018-12-31">                 </td>
+<td>              </td>
+</tr>
+<tr>
+<td> Jeudi</td>
+<td><label for="start"></label>
+
+<input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="2018-01-01" max="2018-12-31">                 </td>
+<td>              </td>
+</tr>
+<tr>
+<td> Vendredi</td>
+<td> <label for="start"></label>
+
+<input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="2018-01-01" max="2018-12-31">                </td>
+<td>              </td>
+</tr>
+<tr>
+<td> Samedi</td>
+<td> <label for="start"></label>
+
+<input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="2018-01-01" max="2018-12-31">    </td>
+<td>              </td>
+</tr>
+<tr>
+<td> Dimanche</td>
+<td> <label for="start"></label>
+
+<input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="2018-01-01" max="2018-12-31">                </td>
+<td>              </td>
+</tr>
+</table>
+</div>
+</aside>
+
+
+
+</body>
+</html>
+
+		
+		

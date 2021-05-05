@@ -1,0 +1,26 @@
+.sup{clear:both;}
+mypic
+{border:1px #333 solid ; float left ;}
+
+	
+
+/* div */
+div table{
+	background-color :white;
+	width:95%;
+	height :100%;
+	border:10px solid #000000;
+	
+	margin: 50px 
+	;
+	
+	
+}
+ div input {
+	 width:100px; height:80px;
+margin-left:10px;margin-top:50px;margin-right:10px;
+        float:left;}		
+	
+
+
+
